@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkhamflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menu nav -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'index' %}" role="link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'form-contacto' %}" role="link">contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'index' %}">Volver</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Respuesta del formulario -->
+        <div class="container">
+            <div class="container form">
+                <h3 class="text-center">¡Formulario enviado con éxito!</h3>
+                <p class="text-center">Gracias por contactarnos. Hemos recibido la siguiente información:</p>
+                <h1>Formulario enviado con éxito</h1>
+                <p>Nombre: {{ name }}</p>
+                <p>Email: {{ email }}</p>
+                <p>Mensaje: {{ message }}</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/main-form.js"></script>
+</body>
+
+<!-- footer -->
+{% include 'footer.html' %}
+
+</html>

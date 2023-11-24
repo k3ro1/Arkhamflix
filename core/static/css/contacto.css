@@ -1,0 +1,17 @@
+
+.container {
+    margin-top: 60px;
+}
+
+.form-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-contacto .header {
+    margin-bottom: 20px;
+}
+
+.form-contacto .form-control {
+    margin-bottom: 20px;
+}

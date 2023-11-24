@@ -1,0 +1,50 @@
+<div class="container">
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.5">
+    <title>Arkhamflix</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    {% block content %}
+        <footer>
+            <div class="PiePag">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <dl class="colores1">
+                                <section class="main align-items-stretch">
+                                    <div class="main-sup d-flex flex-column justify-content-center align-items-center">
+                                        <h1>Arkhamflix</h1>
+                                        <h3>Sitio
+                                            Sobre Arkhamflix
+                                            Preguntas Frecuentes
+                                            Manual de uso
+                                            Colaborar
+                                            Normas de la comunidad
+                                            Términos de Uso
+                                            Política de Privacidad
+                                            Cookies
+                                            Contacto
+                                            Privacy Settings
+                                            Solo en Arkhamflix</h2>
+                                    </div>
+                                    <div class="main-inf d-flex justify-content-center align-items-center">
+                                        <img class="main-inf-img img-fluid smaller-logo" src="{% static '/img/logo.png' %}" alt="" />
+
+                                    </div>
+                                </section>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+    {% endblock %}
+</body>
+</html>

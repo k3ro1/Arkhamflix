@@ -1,0 +1,6 @@
+
+  /* Estilos personalizados para los botones del carrusel */
+  .carousel-indicators button {
+    width: 50px; /* Ajusta el ancho del botón según tus preferencias */
+    height: 15px; /* Ajusta la altura del botón según tus preferencias */
+  }

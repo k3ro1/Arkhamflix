@@ -1,0 +1,101 @@
+
+
+.a{
+  color: rgb(16, 120, 211);
+}
+
+.dinamiquin{
+    display: inline-block;
+    animation: animacion-dinamica 3s infinite;
+    
+  }
+  
+  @keyframes animacion-dinamica {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+
+
+.container{
+  background-color: rgba(125, 196, 194, 0.781);
+    width: auto;
+    
+}
+
+.Subtitulo{
+    color:rgb(205, 146, 146));
+    
+    
+}
+
+
+.PiePag{
+    color: rgb(23, 5, 5);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*SLIDER DE IMAGENES====*/
+  .carousel-inner {
+    max-height:39rem !important;
+  }
+
+  .ordenando{
+    color: rgba(238, 238, 3, 0.763);
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+  .colores1{
+    color: rgba(129, 228, 157, 0.884));
+  }
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .boton-dinamico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: transform 10s;
+  }
+  
+  .boton-dinamico:last-child {
+    margin-right: 0;
+  }
+  
+  .boton-dinamico img {
+    width: 100px;
+    transition: transform 0.5s;
+  }
+  
+  .boton-dinamico:hover img {
+    transform: scale(1.1);
+  }
+  
+  .texto-boton {
+    margin-top: 10px;
+    color: rgb(13, 6, 4);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .smaller-logo {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    border-radius: 50%;
+  }
+  

@@ -1,0 +1,10 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 1;
+  }
+
+  img{
+    width: 600px;
+  }
